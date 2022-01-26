@@ -28,17 +28,24 @@ section {
   text-decoration: none;
   outline: none;
 
-  &:hover {}
+  &:hover {
+  }
 }
 
-.section-header {}
+.section-header {
+}
 
-.page-header {}
+.page-header {
+}
 
 .row {
   @include alignJustify(flex-start, flex-start);
 
-  &_between {
+  &--between {
     justify-content: space-between;
+  }
+
+  &--align-center {
+    align-items: center;
   }
 }

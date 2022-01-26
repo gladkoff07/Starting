@@ -9,22 +9,19 @@
   font-size: $size;
 }
 
-@mixin content($left, $top) {
-  content: "";
+@mixin content($content: "", $left, $top) {
+  content: $content;
   display: block;
   position: absolute;
   left: $left;
   top: $top;
 }
 
-@mixin alignJustify($justify, $vertical: flex-start) {
+@mixin alignJustify($justify: flex-start, $vertical: flex-start) {
   display: flex;
   flex-wrap: wrap;
   justify-content: $justify;
-
-  @if ($vertical != flex-start) {
-    align-items: $vertical;
-  }
+  align-items: $vertical;
 }
 
 @mixin blockAuto($marginTop) {
