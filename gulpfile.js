@@ -264,7 +264,7 @@ gulp.task("img:webp", function () {
 });
 
 // add settings Host(create file apiHost.js for your data)
-import dataHost from "./apiHost.js";
+// import dataHost from "./apiHost.js";
 
 /* Deploy */
 gulp.task("deploy", function () {
